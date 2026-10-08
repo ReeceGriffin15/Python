@@ -1,0 +1,9 @@
+{
+  "name": "Challenge Jar",
+  "short_name": "Jar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#1f6f6b",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

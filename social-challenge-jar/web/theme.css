@@ -1,0 +1,83 @@
+/* Theme tokens. A rebrand should only need to touch this file (and copy.js).
+   Components in app.css reference roles, never raw colours. */
+
+:root {
+  color-scheme: light;
+
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+
+  --bg: #f6f4ef;
+  --surface: #fffefb;
+  --surface-2: #efece4;
+  --border: #e0dcd1;
+
+  --ink: #1d1c1a;
+  --ink-2: #55534d;
+  --ink-muted: #7b786f;
+
+  --accent: #1f6f6b;
+  --accent-ink: #ffffff;
+  --accent-soft: #dcecea;
+
+  --good: #2f7d32;
+  --good-soft: #e3f1e3;
+  --warn-soft: #fbf0d9;
+
+  /* chart roles (validated reference slots 1 & 2) */
+  --chart-surface: var(--surface);
+  --chart-approaches: #2a78d6;
+  --chart-gap: #eb6834;
+  --chart-grid: #e6e3da;
+  --chart-axis: var(--ink-muted);
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.05), 0 2px 8px rgb(0 0 0 / 0.04);
+  --gutter: 16px;
+  --maxw: 560px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #151514;
+    --surface: #1e1e1c;
+    --surface-2: #282826;
+    --border: #353531;
+    --ink: #f3f2ee;
+    --ink-2: #c3c2b7;
+    --ink-muted: #8f8d84;
+    --accent: #4fb3ac;
+    --accent-ink: #0d1f1e;
+    --accent-soft: #1f3533;
+    --good: #6cc070;
+    --good-soft: #1d2e1e;
+    --warn-soft: #33291a;
+    --chart-approaches: #3987e5;
+    --chart-gap: #d95926;
+    --chart-grid: #2c2c29;
+    --shadow: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #151514;
+  --surface: #1e1e1c;
+  --surface-2: #282826;
+  --border: #353531;
+  --ink: #f3f2ee;
+  --ink-2: #c3c2b7;
+  --ink-muted: #8f8d84;
+  --accent: #4fb3ac;
+  --accent-ink: #0d1f1e;
+  --accent-soft: #1f3533;
+  --good: #6cc070;
+  --good-soft: #1d2e1e;
+  --warn-soft: #33291a;
+  --chart-approaches: #3987e5;
+  --chart-gap: #d95926;
+  --chart-grid: #2c2c29;
+  --shadow: none;
+}
